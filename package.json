@@ -31,7 +31,7 @@
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
     "prepare": "husky",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run lint && npm run build",
     "example:install": "npm run build && cd examples/nextjs && npm install",
     "example:dev": "npm run build && cd examples/nextjs && npm run dev",
     "example:build": "npm run build && cd examples/nextjs && npm run build",
@@ -39,7 +39,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/magicmove"
+    "url": "git+https://github.com/shakcho/MagicMove.git"
+  },
+  "homepage": "https://github.com/shakcho/MagicMove#readme",
+  "bugs": {
+    "url": "https://github.com/shakcho/MagicMove/issues"
   },
   "keywords": [
     "react",
@@ -57,10 +61,13 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
     "eslint": "^9",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react-hooks": "^5.1.0",
@@ -70,6 +77,7 @@
     "prettier": "^3.4.2",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
+    "semantic-release": "^24.2.0",
     "typescript": "^5",
     "vite": "^6.0.0",
     "vite-plugin-dts": "^4.4.0"
