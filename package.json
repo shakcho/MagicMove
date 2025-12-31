@@ -1,0 +1,83 @@
+{
+  "name": "magicmove",
+  "version": "0.1.0",
+  "description": "React View Transitions Library - Apple Keynote-style Magic Move animations for the web",
+  "type": "module",
+  "main": "./dist/magicmove.cjs",
+  "module": "./dist/magicmove.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/magicmove.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/magicmove.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc && vite build",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "prepare": "husky",
+    "prepublishOnly": "npm run build",
+    "example:install": "npm run build && cd examples/nextjs && npm install",
+    "example:dev": "npm run build && cd examples/nextjs && npm run dev",
+    "example:build": "npm run build && cd examples/nextjs && npm run build",
+    "example:start": "cd examples/nextjs && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/magicmove"
+  },
+  "keywords": [
+    "react",
+    "animation",
+    "view-transitions",
+    "magic-move",
+    "transitions",
+    "layout-animation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^9",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "prettier": "^3.4.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "typescript": "^5",
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.4.0"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
