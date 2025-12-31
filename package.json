@@ -1,6 +1,6 @@
 {
   "name": "magicmove",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React View Transitions Library - Apple Keynote-style Magic Move animations for the web",
   "type": "module",
   "main": "./dist/magicmove.cjs",
