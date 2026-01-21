@@ -4,6 +4,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://magicmove.saktichourasia.dev"),
   title: "MagicMove – React View Transitions Library",
   description:
     "A lightweight React library that brings Apple Keynote's Magic Move transitions to the web using the native View Transitions API. Create smooth, animated transitions between UI states with minimal code.",
@@ -32,6 +33,8 @@ export const metadata: Metadata = {
     description:
       "A lightweight React library that brings Apple Keynote's Magic Move transitions to the web using the native View Transitions API.",
     type: "website",
+    url: "https://magicmove.saktichourasia.dev",
+    siteName: "MagicMove",
     locale: "en_US",
   },
   twitter: {
@@ -39,6 +42,9 @@ export const metadata: Metadata = {
     title: "MagicMove – React View Transitions Library",
     description:
       "A lightweight React library that brings Apple Keynote's Magic Move transitions to the web using the native View Transitions API.",
+  },
+  alternates: {
+    canonical: "https://magicmove.saktichourasia.dev",
   },
   robots: {
     index: true,
