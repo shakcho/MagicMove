@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "magicmove": "file:../..",
+    "magicmove": "0.1.0",
     "next": "16.1.1",
     "prism-react-renderer": "^2.4.1",
     "react": "19.2.3",
@@ -26,4 +26,3 @@
     "typescript": "^5"
   }
 }
-
