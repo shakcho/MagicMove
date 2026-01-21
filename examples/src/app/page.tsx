@@ -1,6 +1,50 @@
 import Link from "next/link";
 import { CodeBlock } from "@/components/CodeBlock";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "MagicMove – React View Transitions Library",
+  description:
+    "A lightweight React library that brings Apple Keynote's Magic Move transitions to the web using the native View Transitions API. Create smooth, animated transitions between UI states with minimal code.",
+  keywords: [
+    "React",
+    "View Transitions",
+    "animations",
+    "Magic Move",
+    "UI transitions",
+    "React library",
+    "web animations",
+  ],
+  authors: [
+    {
+      name: "Sakti Kumar Chourasia",
+      url: "https://github.com/shakcho",
+    },
+    {
+      name: "Sakti Kumar Chourasia",
+      url: "https://linkedin.com/in/shakcho",
+    },
+  ],
+  creator: "Sakti Kumar Chourasia",
+  openGraph: {
+    title: "MagicMove – React View Transitions Library",
+    description:
+      "A lightweight React library that brings Apple Keynote's Magic Move transitions to the web using the native View Transitions API.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MagicMove – React View Transitions Library",
+    description:
+      "A lightweight React library that brings Apple Keynote's Magic Move transitions to the web using the native View Transitions API.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 const examples = [
   {
@@ -59,7 +103,7 @@ export default function HomePage() {
           React View Transitions Library
         </h1>
         <p className="text-[var(--text-secondary)] leading-relaxed max-w-xl">
-          A lightweight library that brings Apple Keynote&apos;s Magic Move 
+          A lightweight library that brings Apple Keynote&apos;s Magic Move
           transitions to the web using the native{" "}
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API"
